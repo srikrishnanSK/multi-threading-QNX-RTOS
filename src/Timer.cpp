@@ -8,12 +8,12 @@
 ///Signal
 sigset_t sigst;
 
-/** Default constructor stub that has been auto-generated and can be used based on requirement and design*/
+/** Default constructor stub that can be used based on requirement and design*/
 Timer::Timer() {
 
 }
 
-/** Default Destructor stub that has been auto-generated and can be used based on requirement and design*/
+/** Default Destructor stub that can be used based on requirement and design*/
 Timer::~Timer() {
 }
 

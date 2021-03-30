@@ -19,7 +19,7 @@
 using namespace std;
 
 class csv {
-public:
+protected:
 	csv();///Constructor
 	virtual ~csv();///Destructor
     vector<string> read_csv_line(int line_number);///Gets the particular line number to be read

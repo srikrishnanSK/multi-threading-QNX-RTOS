@@ -48,3 +48,4 @@ the 30-day trial.
 6. Run the project on the target.
 
 
+For further documentation and information go through the realtime_documentation.pdf or the index.html in the HTML directory.

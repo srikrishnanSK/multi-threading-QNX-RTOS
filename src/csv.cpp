@@ -4,13 +4,13 @@
  */
 
 #include "csv.h"
-/** Default constructor stub that has been auto-generated and can be used based on requirement and design*/
+/** Default constructor stub that can be used based on requirement and design*/
 csv::csv() {
 
 
 }
 
-/** Default destructor stub that has been auto-generated and can be used based on requirement and design*/
+/** Default destructor stub that can be used based on requirement and design*/
 csv::~csv() {
 
 }

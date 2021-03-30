@@ -27,13 +27,14 @@
 #define PERIOD500ms 500000 /**< Constant timer period macro for 500ms */
 #define PERIOD2s 2000000 /**< Constant timer period macro for 2s */
 #define PERIOD100ms 100000 /**< Constant timer period macro for 100ms */
+#define PERIOD250ms 250000 /**< Constant timer period macro for 100ms */
 #define PERIOD5s 5000000 /**< Constant timer period macro for 5s */
 #define PERIOD150ms 150000 /**< Constant timer period macro for 150ms */
 #define PERIOD500ms 500000 /**< Constant timer period macro for 500ms */
 #define PERIOD1s 1000000 /**< Constant timer period macro for 1s */
 
 class Timer {
-public:
+protected:
 	Timer();///Constructor
 	virtual ~Timer();///Destructor
 	void wait_next_activation(void);///Signaling function
