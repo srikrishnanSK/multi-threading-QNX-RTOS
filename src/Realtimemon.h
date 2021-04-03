@@ -27,7 +27,7 @@ private:
 	{
 	    double fuel_consumption;
 	    int Engine_speed;
-	    int Enginer_coolant_temperature;
+	    int Engine_coolant_temperature;
 	    int current_gear;
 	    int vehicle_speed;
 	    double acceleration;

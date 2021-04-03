@@ -40,12 +40,15 @@ the 30-day trial.
 6. Once the virtual machine has been spun the target should be succesfully connected through Momentix IDE.
 
 ### Running the project
-1. Extract the source files in your workspace and open them in Momentix IDE.
-2. Build the project.
-3. click on symbol i on the top right corner of the screen (should open the target perspective).
-4. Click on the target and open the Target file system navigator. 
-5. Copy paste the dataset.csv file in the tmp directory **(Will not allow you to put files anywhere else)**.
-6. Run the project on the target.
+1. Extract the source files in your workspace.
+2. Create a new project with File -> QNX project -> C/C++ executable -> Name, C++, x86_64 architecture and launch
+3. Copy the source files on to the created project source files.
+4. Clean the project folder.
+5. Click on symbol i on the top right corner of the screen (should open the target perspective).
+6. Click on the target and open the Target file system navigator. 
+7. Copy paste the dataset.csv file in the tmp directory **(Will not allow you to put files anywhere else)**.
+8. Build the project.
+9. Run the project on the target.
 
 
 For further documentation and information go through the realtime_documentation.pdf or the index.html in the HTML directory.

@@ -29,7 +29,7 @@ void* Realtimemon::Store_data_in_vector(void* arg)
 	Realtimemon *monitor = static_cast<Realtimemon*>(arg);/// Type-casted to make it identifiable as an object of Realtimemon class
 	int timer_res,line_number=2;///Line number and timer result
 	///set and activate a timer
-	timer_res = monitor->timer_create(PERIOD5s);/// Create a timer with a period 1s
+	timer_res = monitor->timer_create(PERIOD1s);/// Create a timer with a period 1s
 	if (timer_res < 0 ){
 			perror("Start periodic timer");
 		}
@@ -116,7 +116,7 @@ void* Realtimemon::Engine_coolant_temperature(void* arg)
 	{
 		monitor->wait_for_signal();
 		monitor->lock_variable();
-		monitor->line_data.Enginer_coolant_temperature = stoi(monitor->tokenized_data[17]);
+		monitor->line_data.Engine_coolant_temperature = stoi(monitor->tokenized_data[17]);
 		monitor->unlock_variable();
 	}
 
@@ -311,6 +311,6 @@ void Realtimemon::unlock_variable(void)
  */
 void Realtimemon::update_console(void)
 {
-	cout<<"Fuel Consumption: "<<line_data.fuel_consumption<<" "<<"Engine Speed: "<<line_data.Engine_speed<<" "<<"Engine Coolant Temperature: "<<line_data.Enginer_coolant_temperature<<" "<<"Current Gear: "<<line_data.current_gear<<" "<<"Transmission Oil temperature: "<<line_data.Transmission_oil_temp<<" "<<"Vehicle Speed: "<<line_data.vehicle_speed<<" "<<"Acceleration speed Longitudinal:"<<line_data.acceleration<<" "<<"Indication of break switch: "<<line_data.Brake_switch_indicator<<" "<<endl;
+	cout<<"Fuel Consumption: "<<line_data.fuel_consumption<<" "<<"Engine Speed: "<<line_data.Engine_speed<<" "<<"Engine Coolant Temperature: "<<line_data.Engine_coolant_temperature<<" "<<"Current Gear: "<<line_data.current_gear<<" "<<"Transmission Oil temperature: "<<line_data.Transmission_oil_temp<<" "<<"Vehicle Speed: "<<line_data.vehicle_speed<<" "<<"Acceleration speed Longitudinal:"<<line_data.acceleration<<" "<<"Indication of break switch: "<<line_data.Brake_switch_indicator<<" "<<endl;
 }
 
